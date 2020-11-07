@@ -1,0 +1,122 @@
+.masters {
+  background-color: $background-light-theme;
+  text-align: center;
+
+  &-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    letter-spacing: 0.03em;
+    color: $title-light-theme-color;
+    margin-bottom: 10px;
+  }
+
+  &-description {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.188;
+    letter-spacing: 0.03em;
+    color: $main-light-theme-color;
+  }
+
+  &-container {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.masters-list-item {
+  width: 450px;
+  background-color: $title-dark-theme-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-svg {
+  width: 20px;
+  height: 20px;
+  fill: $icon-theme;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: $title-dark-theme-color;
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .masters-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .masters-list-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  .masters-list-item {
+    margin-bottom: 30px;
+  }
+
+  .masters-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .masters-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .masters-list-item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .masters-list-item {
+    width: 270px;
+  }
+
+  .masters-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .masters-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}

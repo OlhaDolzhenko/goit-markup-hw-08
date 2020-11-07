@@ -1,3 +1,21 @@
-body {
-  cursor: pointer;
-}
+//utils
+@import "./utils/variables";
+//base
+@import "./base/common";
+@import "./base/visually-hidden";
+
+//components
+@import "./components/title";
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/button";
+@import "./components/modal";
+
+//layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/activities";
+@import "./layout/masters";
+@import "./layout/clients";
+@import "./layout/footer";

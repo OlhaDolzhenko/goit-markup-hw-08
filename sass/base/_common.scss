@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $main-font;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  font-style: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding: 0 15px;
+
+  .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .activities & {
+    padding-bottom: 94px;
+  }
+
+  .projects &,
+  .advantages &,
+  .masters & {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .projects .container,
+  .advantages .container,
+  .masters .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
