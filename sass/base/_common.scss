@@ -7,6 +7,7 @@
 
 body {
   font-family: $main-font;
+  min-width: 100%;
 }
 
 .list {
@@ -24,34 +25,12 @@ img {
 
 .container {
   padding: 0 15px;
-
-  .header & {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .activities & {
-    padding-bottom: 94px;
-  }
-
-  .projects &,
-  .advantages &,
-  .masters & {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
     margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
   }
 }
 
@@ -66,4 +45,20 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.activities .container {
+  padding-bottom: 94px;
+}
+
+.projects .container,
+.advantages .container,
+.masters .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
