@@ -7,6 +7,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  min-width: 480px;
 }
 
 .list {
@@ -25,23 +26,6 @@ img {
 
 .container {
   padding: 0 15px;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.activities .container {
-  padding-bottom: 94px;
-}
-
-.projects .container,
-.advantages .container,
-.masters .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -67,6 +51,23 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activities .container {
+  padding-bottom: 94px;
+}
+
+.projects .container,
+.advantages .container,
+.masters .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .visually-hidden {
@@ -160,9 +161,9 @@ img {
 }
 
 .menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  /*margin: 0;
+  padding: 0;*/
   border: none;
   background-color: transparent;
   outline: none;
@@ -210,6 +211,7 @@ img {
   }
   .menu-container.is-open {
     display: block;
+    z-index: 20;
   }
 }
 
@@ -264,6 +266,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -897,6 +900,11 @@ img {
   .footer-social-list-container {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .mail-form {
+    width: 460px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
