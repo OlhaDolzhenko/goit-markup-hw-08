@@ -287,15 +287,9 @@ img {
 
 .modal {
   position: relative;
-  /*position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
-  /*max-width: 450px;*/
   height: 609px;
   padding: 40px;
   background-color: #fff;
-  /*transform: translate(-50%, -50%) scale(1);*/
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 11;
 }
@@ -432,26 +426,6 @@ img {
   line-height: 1.167;
   letter-spacing: 0.03em;
   color: #757575;
-  /*&::before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 16px;
-    border: 2px solid #000;
-    border-radius: 2px;
-    margin-right: 8px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .contact-form-policy:checked + & {
-      background-color: $accent-color;
-      border-color: transparent;
-      background-image: url(../images/svg/check.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  }*/
 }
 
 .contact-form-policy-wrapper {
@@ -476,7 +450,6 @@ img {
 
 .contact-form-policy:checked ~ .modal-custom-checkbox {
   background-color: #2196f3;
-  /*border-color: transparent;*/
   border-radius: 2px;
   background-image: url(../images/svg/check.svg);
   background-repeat: no-repeat;
@@ -767,6 +740,10 @@ img {
   border: 1px solid #eeeeee;
 }
 
+.projects-img {
+  width: 100%;
+}
+
 .projects-list-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -776,13 +753,12 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-list-item {
-  height: 404px;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .projects-list-item {
     width: 450px;
+  }
+  .projects-list-item {
+    height: 404px;
   }
 }
 
@@ -795,6 +771,9 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects-list-item:nth-child(odd) {
     margin-right: 30px;
+  }
+  .projects-list-item:nth-child(2) {
+    height: 440px;
   }
 }
 
