@@ -72,7 +72,7 @@
   }
 
   .navigation-list-link {
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .header-address-link {
@@ -163,33 +163,25 @@
   }
 }
 
-.current {
+.link.current {
+  display: inline-block;
   position: relative;
 
   &::after {
     content: "";
-    display: inline-block;
     position: absolute;
+    left: 0;
+    bottom: 8px;
+    display: block;
+    width: 100%;
     height: 4px;
     background-color: $accent-color;
     border-radius: 2px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .current::after {
-    left: 50%;
-    bottom: 12px;
-    transform: translateX(-50%);
-
-    width: 61px;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .current::after {
-    left: 0;
+  .link.current::after {
     bottom: 0;
-    width: 100%;
   }
 }

@@ -25,6 +25,23 @@ img {
 
 .container {
   padding: 0 15px;
+
+  .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 480px;
+  }
+  .activities & {
+    padding-bottom: 94px;
+  }
+
+  .projects &,
+  .advantages &,
+  .masters & {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -51,20 +68,4 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.activities .container {
-  padding-bottom: 94px;
-}
-
-.projects .container,
-.advantages .container,
-.masters .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }

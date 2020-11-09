@@ -28,6 +28,24 @@ img {
   padding: 0 15px;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 480px;
+}
+
+.activities .container {
+  padding-bottom: 94px;
+}
+
+.projects .container,
+.advantages .container,
+.masters .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -51,23 +69,6 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.activities .container {
-  padding-bottom: 94px;
-}
-
-.projects .container,
-.advantages .container,
-.masters .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .visually-hidden {
@@ -534,7 +535,7 @@ img {
     margin-bottom: 32px;
   }
   .navigation-list-link {
-    padding: 20px;
+    padding: 20px 0;
   }
   .header-address-link {
     padding: 8px;
@@ -614,33 +615,26 @@ img {
   }
 }
 
-.current {
+.link.current {
+  display: inline-block;
   position: relative;
 }
 
-.current::after {
+.link.current::after {
   content: "";
-  display: inline-block;
   position: absolute;
+  left: 0;
+  bottom: 8px;
+  display: block;
+  width: 100%;
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
 }
 
-@media screen and (max-width: 767px) {
-  .current::after {
-    left: 50%;
-    bottom: 12px;
-    transform: translateX(-50%);
-    width: 61px;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .current::after {
-    left: 0;
+  .link.current::after {
     bottom: 0;
-    width: 100%;
   }
 }
 
@@ -748,6 +742,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .advantages-subtitle {
+    text-align: left;
+  }
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
@@ -1203,6 +1200,9 @@ img {
     display: flex;
     align-items: baseline;
     justify-content: center;
+  }
+  .footer-address-wrapper {
+    text-align: left;
   }
   .footer-social-list-container {
     text-align: left;
