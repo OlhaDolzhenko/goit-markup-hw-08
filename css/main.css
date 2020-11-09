@@ -34,6 +34,12 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 479px) {
+  .header .container {
+    width: 100%;
+  }
+}
+
 .activities .container {
   padding-bottom: 94px;
 }
@@ -228,6 +234,12 @@ img {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.06em;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -235,8 +247,7 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
-  max-width: 200px;
-  height: 50px;
+  padding: 10px 32px;
   text-align: center;
   border: 0px;
   border-radius: 4px;
@@ -1151,7 +1162,7 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  max-width: 450px;
+  /*width: 450px;*/
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
@@ -1180,6 +1191,21 @@ img {
   fill: #ffffff;
 }
 
+@media screen and (max-width: 479px) {
+  .mail-form {
+    padding: 0 15px;
+  }
+  .mail-form-input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mail-form-input {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-wrapper {
     display: flex;
@@ -1197,7 +1223,7 @@ img {
   .footer-input-container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 450px;
+    /*width: 450px;*/
   }
 }
 
@@ -1219,11 +1245,14 @@ img {
     margin-right: 93px;
   }
   .mail-form-input {
-    max-width: 358px;
+    width: 358px;
     margin-right: 10px;
   }
   .footer-input-container {
     text-align: left;
+  }
+  .footer .button {
+    display: inline-block;
   }
 }
 /*# sourceMappingURL=main.css.map */
