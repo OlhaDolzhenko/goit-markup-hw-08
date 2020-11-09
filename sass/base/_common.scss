@@ -7,7 +7,7 @@
 
 body {
   font-family: $main-font;
-  min-width: 480px;
+  /*min-width: 480px;*/
 }
 
 .list {
@@ -30,7 +30,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 480px;
   }
   .activities & {
     padding-bottom: 94px;
@@ -41,6 +40,7 @@ img {
   .masters & {
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: 0 auto;
   }
 }
 
