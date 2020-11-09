@@ -7,7 +7,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  min-width: 480px;
+  /*min-width: 480px;*/
 }
 
 .list {
@@ -32,7 +32,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 480px;
 }
 
 .activities .container {
@@ -44,6 +43,7 @@ img {
 .masters .container {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -163,8 +163,6 @@ img {
 
 .menu-button {
   display: flex;
-  /*margin: 0;
-  padding: 0;*/
   border: none;
   background-color: transparent;
   outline: none;
@@ -237,7 +235,7 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   text-align: center;
   border: 0px;
@@ -281,7 +279,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  max-width: 450px;
   height: 609px;
   padding: 40px;
   background-color: #fff;
@@ -304,7 +302,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }
@@ -911,7 +909,7 @@ img {
     padding-bottom: 60px;
   }
   .mail-form {
-    width: 460px;
+    max-width: 460px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -922,7 +920,7 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
@@ -968,7 +966,7 @@ img {
   .footer-input-container {
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
+    max-width: 450px;
   }
 }
 
@@ -990,7 +988,7 @@ img {
     margin-right: 93px;
   }
   .mail-form-input {
-    width: 358px;
+    max-width: 358px;
     margin-right: 10px;
   }
   .footer-input-container {
